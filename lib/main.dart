@@ -120,7 +120,9 @@ class _MainScreenState extends State<MainScreen> {
                     color: Colors.white,
                     size: 24.0,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    print('Next Step');
+                  },
                 ),
               ),
             ),
