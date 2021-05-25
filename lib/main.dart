@@ -30,7 +30,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   bool showNextStep = false;
   bool showClearIcon = false;
-  String unformattedText;
+  late String unformattedText;
   TextEditingController _phoneNumberController = TextEditingController();
   var maskFormatter = new MaskTextInputFormatter(
       mask: '(###) ###-####', filter: {"#": RegExp(r'[0-9]')});
@@ -68,7 +68,7 @@ class _MainScreenState extends State<MainScreen> {
           children: [
             Text(
               'Get Started',
-              style: Theme.of(context).textTheme.headline5.copyWith(
+              style: Theme.of(context).textTheme.headline5!.copyWith(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
                   ),
