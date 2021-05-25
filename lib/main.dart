@@ -33,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
   String unformattedText;
   TextEditingController _phoneNumberController = TextEditingController();
   var maskFormatter = new MaskTextInputFormatter(
-      mask: '(###) ###-##-##', filter: {"#": RegExp(r'[0-9]')});
+      mask: '(###) ###-####', filter: {"#": RegExp(r'[0-9]')});
 
   void _validatePhoneNumber(String text) {
     unformattedText = maskFormatter.getUnmaskedText();
